@@ -11,7 +11,9 @@ def multiply(a, b):
     return a * b
 
 def divide(a, b):
-    "Divide the first number by the second and return quotient."
+    "Divide the first number by the second and return quotient. Return None if the second number(b) is zero, preventing a crash."
+    if b == 0:
+        return None
     return a/b
 def main():
     print("UGHHHHHH!!! I don't want to do it but I have to. Welcome to Meh-calculator or something like that...")
